@@ -1,0 +1,157 @@
+@import 'components';
+@import 'mixin';
+@import 'variables';
+
+
+@media screen and (max-width:1100px) {
+
+    .task-list{
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .cases{
+        .tab-list{
+            flex-direction: column;
+        }
+    } 
+
+    .row{
+        flex-wrap: wrap;
+    }
+
+    .product{
+        margin: 0 auto;
+    }
+
+    .card{
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+    
+}
+
+@media screen and (max-width:845px) {
+    .product-big{
+        flex-direction: column;
+        text-align: center !important;
+    }
+
+    .row{
+        gap: 30px;
+    }
+
+    .profile{
+        margin: 0 auto;
+
+    }
+    .triangle{
+        flex-direction: column;
+        padding: 100px;
+    }
+
+    .triangle-img{
+        display: none;
+    }
+
+    .form{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width:680px) {
+    .form{
+        width: 100%;
+        align-items: flex-end;
+
+        .input{
+            width: 100%;
+        }
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .contact{
+        flex-direction: column;
+        padding: 30px !important;
+
+        p{
+            margin-bottom: 30px;
+        }
+
+
+    }
+
+    .btn{
+
+        &_yellow{
+            width: 100%;
+        }
+    }
+
+     .container{
+        padding: 0px 15px;
+     }   
+
+    .header{
+
+        button{
+            display: none;
+        }
+        .nav{
+            &__link{
+                display: none;
+            }
+        }
+
+        .burger{
+            display: block;
+        }
+    }
+
+    .card{
+        .card-img{
+            &__icon,&__bg,&__graph,&__graph-2,&__graph-3,&__chart,&__bg-2,&__bg-3,&__bg-4,&__bg-5,&__bg-6,&__bg-7{
+                display: none;
+            }
+        }
+    }
+
+    .sponsor{
+        gap: 10px;
+    }
+
+
+    
+}
+
+@media screen and (max-width:376px) {
+    .title{
+        font-size: 41px;
+        line-height: 55px;
+
+        &_sm{
+            font-size: 40px;
+        }
+    }
+
+    .card{
+        .card-group{
+            img{
+                display: none;
+            }
+            &__stats{
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    }
+
+    .middle{
+        margin: 50px 0px 50px !important;
+    }
+}

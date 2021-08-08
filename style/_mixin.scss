@@ -1,0 +1,10 @@
+@mixin color($bg , $color) {
+    background-color: $bg;
+    color: $color;
+}
+
+@mixin flexbox($flex , $center,$justify) {
+    display: $flex;
+    align-items: $center;
+    justify-content: $justify;
+}
